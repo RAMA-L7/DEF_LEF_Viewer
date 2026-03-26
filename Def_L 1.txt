@@ -1,0 +1,72 @@
+
+DEF_L shape:
+ 
+ 
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN rp_top_top ;
+UNITS DISTANCE MICRONS 2000 ;
+PROPERTYDEFINITIONS
+COMPONENTPIN ACCESS_DIRECTION STRING ;
+END PROPERTYDEFINITIONS
+DIEAREA ( 0 0 ) ( 0 1400400 ) ( 845040 1400400 ) ( 845040 702000 ) ( 1684480 702000 ) ( 1684480 0 ) ;
+ 
+COMPONENTS 6 ;
+- sequencer_top0/sequencer_core/rp_sequencer_mem_wrapper0/genblk1.U1_SEQ_MEM TS1N28HPCPUHDHVTB2048X129M4SWBSO + FIXED (  2800 759700 ) N ;
+- sequencer_top0/sequencer_core/rp_sequencer_mem_wrapper0/genblk1.U0_SEQ_MEM TS1N28HPCPUHDHVTB2048X129M4SWBSO + FIXED ( 518630 759700 ) S ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U3_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED (  2800 196380 ) N ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U2_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED (  2800  1800 ) N ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U1_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED (933690  1800 ) S ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U0_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED (933690 196380 ) S ;
+ 
+END COMPONENTS
+ 
+PINS  ;
+- clk + NET clk + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 667950 0 ) N ;
+- rst_n + NET rst_n + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 726950 0 ) N ;
+- scan_mode + NET scan_mode + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 555100 0 ) N ;
+- scan_en + NET scan_en + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 621350 0 ) N ;
+- jtag_en + NET jtag_en + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 532150 0 ) N ;
+- jtag_tck + NET jtag_tck + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 561550 0 ) N ;
+- jtag_tms + NET jtag_tms + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 594750 0 ) N ;
+- jtag_tdi + NET jtag_tdi + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 702150 0 ) N ;
+- jtag_tdo_dmux3 + NET jtag_tdo_dmux3 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 100 560 )
+  + PLACED ( 701750 0 ) N ;
+- spi_sen + NET spi_sen + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 634950 0 ) N ;
+- spi_mosi + NET spi_mosi + DIRECTION INPUT + USE SIGNAL
+  + LAYER M3 ( 0 0 ) ( 680 100 )
+  + PLACED ( 595450 0 ) N ;
+- spi_miso + NET spi_miso + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 100 560 )
+  + PLACED ( 1248190 701440 ) N ;
+- lan_en[13] + NET lan_en[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 100 560 )
+  + PLACED ( 1128070 701440 ) N ;
+- lan_en[12] + NET lan_en[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 100 560 )
+  + PLACED ( 1305870 701440 ) N ;
+- lan_en[11] + NET lan_en[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M2 ( 0 0 ) ( 100 560 )
+  + PLACED ( 1098670 701440 ) N ;
+ 
+END PINS

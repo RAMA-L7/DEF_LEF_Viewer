@@ -1,0 +1,199 @@
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN rp_top_top ;
+UNITS DISTANCE MICRONS 2000 ;
+DIEAREA ( 0 0 ) ( 0 1704800 ) ( 901920 1704800 ) ( 901920 0 ) ;
+
+COMPONENTS 6 ;
+- sequencer_top0/sequencer_core/rp_sequencer_mem_wrapper0/genblk1.U0_SEQ_MEM TS1N28HPCPUHDHVTB2048X129M4SWBSO + UNPLACED ;
+- sequencer_top0/sequencer_core/rp_sequencer_mem_wrapper0/genblk1.U1_SEQ_MEM TS1N28HPCPUHDHVTB2048X129M4SWBSO + PLACED ( 577030 1063100 ) S
+  + HALO 350 0 280 0 ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U0_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED ( 1280 2800 ) N
+  + HALO 280 0 450 0 ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U1_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED ( 1280 197380 ) N
+  + HALO 280 0 450 0 ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U2_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED ( 1280 391960 ) N
+  + HALO 280 0 450 0 ;
+- fifo_top0/fifo_core_1/rp_fifo_mem_wrapper0/genblk1.U3_FIFO_MEM TSDN28HPCPUHDB4096X33M4MWA + FIXED ( 1280 586540 ) N
+  + HALO 280 0 450 0 ;
+
+
+END COMPONENTS
+
+PINS 428 ;
+- clk + NET clk + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 416750 1704120 ) N ;
+- rst_n + NET rst_n + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 544350 1704120 ) N ;
+- scan_mode + NET scan_mode + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 528750 1704120 ) N ;
+- scan_en + NET scan_en + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 513150 1704120 ) N ;
+- jtag_en + NET jtag_en + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 497750 1704120 ) N ;
+- jtag_tck + NET jtag_tck + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 482150 1704120 ) N ;
+- jtag_tms + NET jtag_tms + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 466550 1704120 ) N ;
+- jtag_tdi + NET jtag_tdi + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 450950 1704120 ) N ;
+- jtag_tdo_dmux3 + NET jtag_tdo_dmux3 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 766100 0 ) N ;
+- dmux0 + NET dmux0 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 765300 0 ) N ;
+- dmux1 + NET dmux1 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 764500 0 ) N ;
+- dmux2 + NET dmux2 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 763700 0 ) N ;
+- dmux_0_2_out_en + NET dmux_0_2_out_en + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 762900 0 ) N ;
+- spi_clk + NET spi_clk + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 435350 1704120 ) N ;
+- spi_sen + NET spi_sen + DIRECTION INPUT + USE SIGNAL
++ LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 419750 1704120 ) N ;
+- spi_mosi + NET spi_mosi + DIRECTION INPUT + USE SIGNAL
+  + LAYER M4 ( 0 0 ) ( 100 680 )
+  + PLACED ( 404150 1704120 ) N ;
+- spi_miso + NET spi_miso + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 762100 0 ) N ;
+- lan_en[13] + NET lan_en[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 761300 0 ) N ;
+- lan_en[12] + NET lan_en[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 760500 0 ) N ;
+- lan_en[11] + NET lan_en[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 759700 0 ) N ;
+- lan_en[10] + NET lan_en[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 758900 0 ) N ;
+- lan_en[9] + NET lan_en[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 758100 0 ) N ;
+- lan_en[8] + NET lan_en[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 757300 0 ) N ;
+- lan_en[7] + NET lan_en[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 756500 0 ) N ;
+- lan_en[6] + NET lan_en[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 755700 0 ) N ;
+- lan_en[5] + NET lan_en[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 754900 0 ) N ;
+- lan_en[4] + NET lan_en[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 754100 0 ) N ;
+- lan_en[3] + NET lan_en[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 753300 0 ) N ;
+- lan_en[2] + NET lan_en[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 752500 0 ) N ;
+- lan_en[1] + NET lan_en[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 751700 0 ) N ;
+- lan_en[0] + NET lan_en[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 899300 0 ) N ;
+- dac_las_sel[9] + NET dac_las_sel[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 898500 0 ) N ;
+- dac_las_sel[8] + NET dac_las_sel[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 897700 0 ) N ;
+- dac_las_sel[7] + NET dac_las_sel[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 896900 0 ) N ;
+- dac_las_sel[6] + NET dac_las_sel[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 896100 0 ) N ;
+- dac_las_sel[5] + NET dac_las_sel[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 895300 0 ) N ;
+- dac_las_sel[4] + NET dac_las_sel[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 894500 0 ) N ;
+- dac_las_sel[3] + NET dac_las_sel[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 893700 0 ) N ;
+- dac_las_sel[2] + NET dac_las_sel[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 892900 0 ) N ;
+- dac_las_sel[1] + NET dac_las_sel[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 892100 0 ) N ;
+- dac_las_sel[0] + NET dac_las_sel[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 891300 0 ) N ;
+- las_n_led + NET las_n_led + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 890500 0 ) N ;
+- lcat_en[12] + NET lcat_en[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 889700 0 ) N ;
+- lcat_en[11] + NET lcat_en[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
++ PLACED ( 888900 0 ) N ;
+- lcat_en[10] + NET lcat_en[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 888100 0 ) N ;
+- lcat_en[9] + NET lcat_en[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 887300 0 ) N ;
+- lcat_en[8] + NET lcat_en[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 886500 0 ) N ;
+- lcat_en[7] + NET lcat_en[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 885700 0 ) N ;
+- lcat_en[6] + NET lcat_en[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 884900 0 ) N ;
+- lcat_en[5] + NET lcat_en[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 884100 0 ) N ;
+- lcat_en[4] + NET lcat_en[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 883300 0 ) N ;
+- lcat_en[3] + NET lcat_en[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 882500 0 ) N ;
+- lcat_en[2] + NET lcat_en[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 881700 0 ) N ;
+- lcat_en[1] + NET lcat_en[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 880900 0 ) N ;
+- lcat_en[0] + NET lcat_en[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 880100 0 ) N ;
+- hga_sel[25] + NET hga_sel[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 879300 0 ) N ;
+- hga_sel[24] + NET hga_sel[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 878500 0 ) N ;
+- hga_sel[23] + NET hga_sel[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER M6 ( 0 0 ) ( 200 1040 )
+  + PLACED ( 877700 0 ) N ;
+END PINS
+
