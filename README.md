@@ -135,7 +135,7 @@ python viewer.py --def path/to/design.def --lef path/to/library.lef
 - Pins are visualized as triangles with different colors: **orange = INPUT**, **purple = OUTPUT**, **black = INOUT**.  
 - Labels show instance and cell names for each macro and pin.  
 
-Sample screenshot (replace `example_view.png` with your actual saved view):
+Sample screenshot :
 
 ![Example Layout](DEF_LEF_L_shape.png)
 ![Example Layout](DEF_LEF_square_shape.png)
