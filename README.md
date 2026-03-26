@@ -161,8 +161,5 @@ This project is released under the **MIT License**.
 ## Contact
 
 For questions or suggestions, open an issue in this repository or contact the maintainer.
-```
-
----
 
 
