@@ -1,5 +1,4 @@
 
-```markdown
 # DEF/LEF Macro Viewer
 
 A Python application to **visualize DEF and LEF macro placements and I/O pins** for ASIC/SoC designs. The tool uses **Tkinter** for GUI and **Matplotlib** for plotting, providing an interactive way to inspect the chip layout during backend design stages.
