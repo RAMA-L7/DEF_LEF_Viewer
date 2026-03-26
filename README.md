@@ -137,7 +137,8 @@ python viewer.py --def path/to/design.def --lef path/to/library.lef
 
 Sample screenshot (replace `example_view.png` with your actual saved view):
 
-![Example Layout](example_view.png)
+![Example Layout](DEF_LEF_L_shape.png)
+![Example Layout](DEF_LEF_square_shape.png)
 
 ---
 
